@@ -1,0 +1,480 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+/* Login Page Start  */
+.login-page {
+  background: #215fa6;
+  position: relative;
+  height: 100vh;
+}
+
+.login-page::before {
+  content: "";
+  position: absolute;
+  background: #002e63;
+  width: 26%;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+}
+
+.login {
+  padding-top: 120px;
+}
+
+.bar {
+  margin-bottom: 80px;
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  position: relative;
+  z-index: 100;
+}
+
+.login-content h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.login-form {
+  background-color: lightgrey;
+  border-color: lightgrey;
+  position: relative;
+  border-radius: 6px;
+}
+
+.login-form h2 {
+  color: #444;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.login-form form {
+  padding: 20px;
+}
+.login-form form .password-icon{
+  position: relative;
+}
+.login-form form .icon{
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  color: gray;
+  cursor: pointer;
+}
+.password-icon{
+  position: relative;
+}
+.icon{
+  position: absolute;
+  top: 35px;
+  right: 25px;
+  color: gray;
+  cursor: pointer;
+}
+.login-form button {
+  width: 100%;
+  text-transform: uppercase;
+  background: #215fa6;
+  border: none;
+}
+/* Login Form End  */
+
+/* Side Navbar  */
+.sidebar {
+  width: 15%;
+  background: #002e63;
+  height: 100%;
+  float: left;
+  position: fixed;
+  overflow: auto;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+.sidebar .logo {
+  text-align: center;
+  margin: 20px;
+}
+.sidebar .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-menu {
+  margin: 0px 20px;
+}
+.navbar-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-menu ul li {
+  padding: 4px 0px;
+}
+.navbar-menu ul li h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 12px;
+}
+.navbar-menu ul li hr {
+  border: 1px solid white;
+  margin-bottom: 10px;
+  opacity: 1;
+}
+.navbar-menu ul li a {
+  text-decoration: none;
+  color: #ff9839;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.navbar-menu ul li a span {
+  margin-left: 16px;
+}
+
+.navbar-menu ul li a:hover {
+  background: #343a40;
+  color: white;
+}
+
+.navbar-menu ul li a.active {
+  background: #215fa6;
+}
+.navbar-menu ul li a:hover.active {
+  background: #343a40;
+  color: #ff9839;
+}
+/* Side Navbar End   */
+
+/* Top Bar  */
+.topbar {
+  width: 85%;
+  background: #215fa6;
+  height: 70px;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  color: white;
+}
+.arrow {
+  cursor: pointer;
+}
+.power {
+  cursor: pointer;
+  color: white;
+}
+.power a:hover {
+  color: white;
+}
+/* TopBar Ends   */
+
+/* Dashboard Section Starts  */
+.dashboard-section {
+  width: 85%;
+  float: right;
+  background: #f4f7f9;
+  padding: 30px 0px;
+}
+.dashboard-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+}
+.dashboard-heading h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #5a5a5a;
+}
+.dashboard-heading ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.dashboard-heading ul li {
+  color: #5a5a5a;
+  display: flex;
+  align-items: center;
+}
+.dashboard-heading ul li span {
+  margin: 0px 10px;
+}
+
+.dashboard .card {
+  background: #215fa6 !important;
+  border: none !important;
+  margin-bottom: 30px;
+  height: 160px;
+  color: white;
+}
+.dashboard .card-body h5 {
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+}
+.dashboard .card-body h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+}
+.dashboard .card-body svg {
+  color: white;
+  font-size: 40px;
+  float: right;
+}
+
+/* Dashboard Section Ends  */
+.users-section {
+  width: 85%;
+  float: right;
+  background: #f4f7f9;
+  padding: 30px 0px;
+}
+/* Users Section Starts  */
+.user-data {
+  overflow: auto;
+}
+/* Users Section Ends  */
+
+/* Add Admin Button Starts */
+.add-admin {
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 6px;
+  background: #17a2b8;
+  color: white;
+  text-align: center;
+  transition: 0.2s;
+}
+.add-admin:hover {
+  background-color: #138496;
+  border-color: #117a8b;
+}
+/* Add Admin Button Ends */
+.user-data h2 {
+  font-size: 18px;
+  color: #5a5a5a;
+  font-weight: 600;
+}
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navtabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f7f9;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.navtabs ul {
+  display: flex;
+  list-style-type: none;
+}
+.navtabs ul li a {
+  color: #5a5a5a;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 20px 10px 20px;
+  cursor: pointer;
+}
+.nav-tabs .nav-link:visited {
+  border: 2px solid lightgray !important;
+  background-color: white !important;
+}
+
+.details {
+  padding: 40px;
+}
+.driver-details {
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+.driver-details img {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+}
+.driver-content h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #5a5a5a;
+  margin-bottom: 12px;
+}
+.driver-content p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #5a5a5a;
+}
+.info-heading {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #5a5a5a;
+}
+.info h2 {
+  font-size: 22px;
+  color: #5a5a5a;
+  margin-bottom: 12px;
+}
+.info p {
+  font-size: 18px;
+  color: #5a5a5a;
+  margin-bottom: 12px;
+}
+.rating h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.activate {
+  width: 100px;
+}
+.earning .card-heading h2 {
+  font-size: 30px;
+  color: #444;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.earning .card {
+  margin-bottom: 30px;
+}
+.earning .card-body h4 {
+  font-size: 22px;
+}
+.earning .card-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.earning .card-text img {
+  width: 100px;
+}
+.earning .card-text span {
+  font-size: 50px;
+  font-weight: 700;
+  color: #444;
+}
+.form h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #5a5a5a;
+}
+.summernote {
+  padding: 30px;
+  border: 1px solid lightgray;
+  background: white;
+}
+.summernote h1 {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #343a40;
+}
+
+.summernote h2 {
+  margin: 20px 0 8px 0px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #444;
+  font-family: "Times New Roman", Times, serif;
+}
+.password label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.password .change {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.summernote .change {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.summernote .start {
+  height: 100%;
+}
+.summernote .start .jodit-react-container {
+  height: 300px !important;
+}
+.summernote .start .jodit-react-container .jodit-container {
+  height: 200px !important;
+}
+.users-section .amount {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  width: 155px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.users-section .amount input{
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  position: relative;
+}
+.users-section .amount .cancel{
+  position: absolute;
+  left: 105px;
+}
+.users-section .amount button{
+  font-size: 13px;
+  padding: 6px;
+}
+
+/* Responsive Starts */
+@media (max-width: 1024px) {
+  .login {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login {
+    padding-top: 40px;
+  }
+  .bar {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .login-page {
+    width: 100%;
+    background: #002e63;
+  }
+  .login-page::before {
+    background: none;
+    width: 0;
+  }
+
+  .login-content h1 {
+    font-size: 25px;
+  }
+}
+/* Responsive Ends */
